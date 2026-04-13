@@ -1,0 +1,2 @@
+# cat=basic; type=boolean; label=Enable DataHandler cache flush: When enabled, the page cache of shortcut pages is flushed immediately when a referenced content element is saved or deleted in the backend. Disable if this causes performance issues on large installations.
+enableDataHandlerCacheFlush = 1
