@@ -74,6 +74,6 @@ key `in2shortcutcache`.
 
 ## Changelog
 
-### 1.0.0
-
-- Initial release: PSR-14 event listener correcting page cache lifetime for shortcut references
+| Version | Date       | State   | Description                                                                                 |
+|---------|------------|---------|---------------------------------------------------------------------------------------------|
+| 1.0.0   | 2026-04-13 | Task    | Initial release                                                                             |

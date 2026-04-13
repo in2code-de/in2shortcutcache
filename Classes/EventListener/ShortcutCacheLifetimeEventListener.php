@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace In2code\In2shortcutcache\EventListener;
 
 use In2code\In2shortcutcache\Domain\Service\In2frequentlyLifetimeCalculator;
+use TYPO3\CMS\Core\Attribute\AsEventListener;
 use TYPO3\CMS\Core\Database\Connection;
 use TYPO3\CMS\Core\Database\ConnectionPool;
 use TYPO3\CMS\Core\Database\Query\Restriction\EndTimeRestriction;
@@ -28,6 +29,7 @@ class ShortcutCacheLifetimeEventListener
     ) {
     }
 
+    #[AsEventListener(identifier: 'in2shortcutcache/shortcut-cache-lifetime')]
     public function __invoke(ModifyCacheLifetimeForPageEvent $event): void
     {
         $referencedUids = $this->getReferencedUidsFromShortcuts($event->getPageId());

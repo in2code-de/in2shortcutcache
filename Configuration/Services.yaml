@@ -10,8 +10,3 @@ services:
   In2code\In2shortcutcache\Backend\DataHandler\ShortcutCacheFlushHook:
     public: true
 
-  In2code\In2shortcutcache\EventListener\ShortcutCacheLifetimeEventListener:
-    tags:
-      - name: event.listener
-        identifier: 'in2shortcutcache/shortcut-cache-lifetime'
-        event: TYPO3\CMS\Frontend\Event\ModifyCacheLifetimeForPageEvent
